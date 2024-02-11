@@ -1,0 +1,12 @@
+            <section class="section certifications-section">
+                <h2 class="section-title"><i class="fa {{ .Site.Params.certifications.icon }}"></i>{{ .Site.Params.certifications.title }}</h2>
+                <div class="intro">
+                    <p>{{ with .Site.Params.certifications.intro }}{{ . | markdownify }}{{ end }}</p>
+                </div><!--//intro-->
+				{{ range .Site.Params.certifications.list }}
+                <div class="item">
+                    <span class="certification-title"><a href="{{ .url }}">{{ .title }}</a></span>
+                    <span class="certification-tagline">{{ with .tagline }}{{ . | markdownify }}{{ end }}</span>
+                </div><!--//item-->
+				{{ end }}
+            </section><!--//section-->
