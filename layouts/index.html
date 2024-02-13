@@ -27,6 +27,10 @@
         {{ partial "projects.html" . }}
         {{ end }}
 
+        {{ if .Site.Params.certifications.enable }}
+        {{ partial "certifications.html" . }}
+        {{ end }}
+
         {{ if .Site.Params.skills.enable }}
         {{ partial "skills.html" . }}
         {{ end }}
