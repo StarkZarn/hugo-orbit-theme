@@ -197,18 +197,6 @@ disableKinds = ["sitemap", "RSS"]
         company = "Amazon, London"
         details = "**Describe your role here** lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem."
 
-      # Certs section
-      [languages.en.params.certifications]
-        enable = true
-        icon = "fa-arrow-right"
-        title = "Certifications and Awards"
-        intro = "**Professional certifications and awards for performance**"
-
-        [[languages.en.params.certifications.list]]
-        title = "A cool cert"
-        url = "https://myurl.tld"
-        tagline = "- My info here"
-
       # Projects section
       [languages.en.params.projects]
         enable = false
